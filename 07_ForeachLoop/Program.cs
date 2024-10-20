@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForeachLoop
+namespace _07_ForeachLoop
 {
     internal class Program
     {
@@ -88,7 +88,7 @@ namespace ForeachLoop
 
                 double totalExamResult = 0;
 
-                // 3 Exam for each student
+                
                 for (int j = 0; j < 3; j++)
                 {
                     Console.WriteLine($"Enter exam note {j + 1} for {studentNames[i]}:");
@@ -96,10 +96,10 @@ namespace ForeachLoop
                     totalExamResult += value; // Adding notes
                 }
 
-                // Calculate average for the student
+                
                 studentExamAverage[i] = totalExamResult / 3;
 
-                // Display student average and pass/fail result
+                
                 Console.WriteLine($"{studentNames[i]}'s average is {studentExamAverage[i]:F2}");
                 if (studentExamAverage[i] >= 50)
                 {
@@ -112,18 +112,17 @@ namespace ForeachLoop
                 Console.WriteLine("--------------------------------");
             }
 
-            // Display overall results for all students
+            
             Console.WriteLine("Summary of results:");
             for (int i = 0; i < studentCount; i++)
             {
                 Console.WriteLine($"{studentNames[i]} - Average: {studentExamAverage[i]:F2}");
             }
-        
 
+            #endregion
 
-        #endregion
+            Console.Read();
 
-        Console.Read();
         }
     }
 }
