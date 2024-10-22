@@ -129,7 +129,7 @@ Methods are crucial for writing reusable and modular code. This project teaches 
 ### Description:
 This project integrates C# with a database system, demonstrating how to perform CRUD (Create, Read, Update, Delete) operations. Connecting a C# application to a database using ADO.NET and execute SQL queries.
 - Setting up database connections
-- CRUD operations with SQL
+- CRUD operations with SQL (up to now only performed select process --> (to be continued))
 - Database interaction from C# applications
 
 ### Key Concepts:
